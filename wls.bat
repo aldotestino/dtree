@@ -1,4 +1,4 @@
-@ECHO OFF
+@echo off
 SET current_directory=%cd%
-cd /d D:\Utenti\atxfo\Documenti\Coding\Python\windows_ls
-py wls.py %current_directory%
+cd /d *Path to wls.py* 
+py wls.py %current_directory% %1
