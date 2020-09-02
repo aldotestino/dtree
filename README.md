@@ -7,8 +7,9 @@
 ```
 wls
 ```
-5. To define the depth digit:
+5. To define the depth digit: [the default depth is 0]
 ```
 wls 2
 ```
+
 6. This will output all the files and folders in that directory recursively

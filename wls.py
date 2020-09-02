@@ -16,7 +16,8 @@ except FileNotFoundError:
     exit(1)
 
 try:
-    DEPTH = int(argv[2])
+    if argv[2] >= 0:
+        DEPTH = int(argv[2])
 except:
     None
 
