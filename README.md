@@ -1,14 +1,27 @@
-# windows_ls
+# dtree
 
-1. Download or clone this repo
-2. Change the path of ```wls.py``` in ```wls.bat```
-3. Add ```wls.bat``` in the system Path (Enviroment variables)
-4. Open your terminal in a directory and digit:
-```sh
-wls
-```
-5. To define the depth digit: [the default depth is 0]
-```sh
-wls 2
-```
-6. This will output all the files and folders in that directory recursively
+## Show the directory structure in the terminal
+
+## Installation
+* Download or clone this repo
+
+* ### Windows
+  * Change the path of ```dtree.py``` in ```bin/dtree.bat``` file
+  * Add ```dtree.bat``` in the system Path (Enviroment variables)
+
+* ### Unix
+  * Open your shell profile (```.zshrc```, ```.bashrc```...)
+  * At the end of the file add the alias
+    ```sh
+    alias dtree="python3 ~/path/to/dtree.py ./"
+    ```
+
+## Usage
+* Open your terminal in a directory and digit
+  ```sh
+  dtree
+  ```
+* To define the depth (the default depth is 0)
+  ```sh
+  dtree 2
+  ```
