@@ -6,11 +6,11 @@
 * Download or clone this repo
 
 * ### Windows
-  * Change the path of ```dtree.py``` in ```bin/dtree.bat``` file
-  * Add ```dtree.bat``` in the system Path (Enviroment variables)
+  * Change the path of `dtree.py` in `bin/dtree.bat` file
+  * Add `dtree.bat` in the system Path (Enviroment variables)
 
 * ### Unix
-  * Open your shell profile (```.zshrc```, ```.bashrc```...)
+  * Open your shell profile (`.zshrc`, `.bashrc`...)
   * At the end of the file add the alias
     ```sh
     alias dtree="python3 ~/path/to/dtree.py ./"
@@ -25,3 +25,6 @@
   ```sh
   dtree 2
   ```
+
+## Customization
+* In `dtree.py` you can modify the `IGNORE_LIST` and `FOLDER_COLOR` 

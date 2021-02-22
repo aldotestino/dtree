@@ -3,7 +3,7 @@ from os.path import isdir
 from os import chdir
 from sys import argv
 
-ignore_list = [
+IGNORE_LIST = [
     'node_modules',
     '.git',
     '.DS_Store',
@@ -17,15 +17,22 @@ ignore_list = [
     '.npm'
     ]
 
+FOLDER_COLOR = '\033[96m'
+END_COLOR = '\033[0m'
+
 
 def print_dtree(DEPTH, file_list, num):
     if num > DEPTH:
         return
     for file in file_list:
-        if file in ignore_list:
+        if file in IGNORE_LIST:
             continue
-        print('├' + '─'*num + ' ' + str(file))
-        if(isdir(file)):
+        is_folder = isdir(file)
+        if is_folder:
+            print('├' + '─'*num + ' ' + FOLDER_COLOR + str(file) + END_COLOR)
+        else:
+            print('├' + '─'*num + ' ' + str(file))
+        if(is_folder):
             chdir(file)
             new_file_list = listdir()
             new_file_list.sort()
